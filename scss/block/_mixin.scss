@@ -1,0 +1,42 @@
+@mixin desktop {
+  @media (max-width: (1500px)) {
+    @content;
+  }
+}
+
+
+@mixin desktop-medium {
+  @media (max-width: (1200px)) {
+    @content;
+  }
+}
+
+@mixin desktop-small {
+  @media (max-width: (992px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: (768px)) {
+    @content;
+  }
+}
+
+
+@mixin mobile {
+  @media (max-width: (576px)) {
+    @content;
+  }
+}
+
+
+@mixin vertical-border {
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background:rgba(255, 255, 255, 0.6);
+    top: 4px;
+    left: -25px;
+}

@@ -1,0 +1,34 @@
+.nav {
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+  
+  &__link {
+    color: var(--color-white);
+    font-size: 14px;
+    line-height: 17.19px;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      color: rgb(221, 255, 127);
+    }
+
+    &:active {
+      color: rgb(67, 216, 216)
+    }
+    
+  }
+
+  @include desktop-medium {
+    display: none;
+  }
+}
+  

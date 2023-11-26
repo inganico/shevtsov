@@ -1,0 +1,13 @@
+
+
+:root {
+
+  //Использую переменные в root только для того, что бы можно в будущем поменять значения в CSS а не открывать Scss
+
+  --color-bg: rgba(19, 51.50, 86.95, 0.87);
+  --color-white: #fff;
+  --color-gray: rgba(255, 255, 255, 0.50);
+  --color-btn: #07305D;
+  --color-btn-stripe: #0B3461;
+  --color-bg-modal: #0F1D45;
+}

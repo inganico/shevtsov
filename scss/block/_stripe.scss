@@ -1,0 +1,48 @@
+.stripe {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 103%;
+    background: var(--color-white);
+    top: 0;
+    left: 269px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 103%;
+    background: var(--color-white);
+    top: 0;
+    right: 265px;
+  }
+
+  &__span {
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 103%;
+      background: var(--color-white);
+      top: 0;
+      left: 689px;
+    }
+  
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 103%;
+      background: var(--color-white);
+      top: 0;
+      right: 715px;
+    }
+  }
+}

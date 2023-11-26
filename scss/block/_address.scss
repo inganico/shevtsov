@@ -1,0 +1,86 @@
+.address {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  z-index: 10;
+  margin-left: 20px;
+
+  @include desktop-medium {
+    margin-left: 0;
+    column-gap: 30px;
+  }
+
+  &__svg {
+    margin-right: 24px;
+
+    @include desktop-medium {
+      margin-right: 0;
+    }
+  }
+
+  @include mobile {
+    margin-right: 20px;
+  }
+
+  
+  &__tel {
+    position: relative;
+    color: var(--color-white);
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.10px;
+    letter-spacing: 0.36px;
+    display: flex;
+    align-items: center;
+    order: 1;
+    transition:color 0.3s , border-color 0.3s ;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      color: rgb(221, 255, 127);
+    }
+
+    &:active {
+      color: rgb(67, 216, 216)
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--color-white);
+      border-radius: 50%;
+      top: -10px;
+      left: -10px;
+    }
+    
+    &:hover::after {
+      border-color:rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus::after {
+      border-color: rgb(221, 255, 127);
+    }
+
+    &:active::after{
+      border-color: rgb(67, 216, 216)
+    }
+
+  }
+
+  &__text {
+
+    @include desktop-medium {
+      display: none;
+    }
+  }
+
+} 
